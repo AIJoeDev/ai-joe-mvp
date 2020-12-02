@@ -1,14 +1,18 @@
 import firebase from 'firebase/app'
 import 'firebase/auth'
 
-// The configuration below is not sensitive data. You can serenely add your config here
-const config = {
-  apiKey: 'AIzaSyCe6CSzOUs6_Ij_VHa6hancdEi6CNBtw7c',
-  authDomain: 'bento-starter.firebaseapp.com',
-  databaseURL: 'https://bento-starter.firebaseio.com',
-  projectId: 'bento-starter',
-  storageBucket: 'bento-starter.appspot.com',
-  messagingSenderId: '458464977217'
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: 'AIzaSyDyRhCBMiQZ5s_oJ3xWjuOOuQgsQ4ZXtxo',
+  authDomain: 'exercise-health.firebaseapp.com',
+  databaseURL: 'https://exercise-health.firebaseio.com',
+  projectId: 'exercise-health',
+  storageBucket: 'exercise-health.appspot.com',
+  messagingSenderId: '285597102570',
+  appId: '1:285597102570:web:d7fad1348f747b62b78293',
+  measurementId: 'G-FES4XE9NVH',
 }
-
-firebase.initializeApp(config)
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig)
+firebase.analytics()
