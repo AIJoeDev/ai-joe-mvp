@@ -18,8 +18,7 @@ module.exports = {
     'no-param-reassign': 'off',
     'no-return-assign': 'off',
     'no-var': 2,
-    'prefer-const': 2,
-    'no-unused-vars': 'off'
+    'prefer-const': 2
   },
   parserOptions: {
     parser: 'babel-eslint'
