@@ -11,7 +11,7 @@ const firebaseConfig = {
   storageBucket: 'exercise-health.appspot.com',
   messagingSenderId: '285597102570',
   appId: '1:285597102570:web:d7fad1348f747b62b78293',
-  measurementId: 'G-FES4XE9NVH',
+  measurementId: 'G-FES4XE9NVH'
 }
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig)
