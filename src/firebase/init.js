@@ -1,6 +1,6 @@
 import firebase from 'firebase/app'
 import 'firebase/auth'
-import axios from 'axios'
+// import axios from 'axios'
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
@@ -18,10 +18,10 @@ import axios from 'axios'
 // firebase.initializeApp(firebaseConfig)
 // firebase.analytics()
 
-// fetch('/__/firebase/init.json').then(async response => {
-//   firebase.initializeApp(await response.json())
-// })
-
-axios.get('/__/firebase/init.json').then(async response => {
-  firebase.initializeApp(await response.data)
+fetch('/__/firebase/init.json').then(async response => {
+  firebase.initializeApp(await response.json())
 })
+
+// axios.get('/__/firebase/init.json').then(async response => {
+//   firebase.initializeApp(await response.data)
+// })
